@@ -9,20 +9,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(0, 95, 243, 0.1);
+    /*background-color: rgba(0, 95, 243, 0.1);*/
+    /*background-image: linear-gradient(45deg, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);*/
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
     backdrop-filter: blur(15px);
-    padding: 1rem;
+    padding: 0.75rem;
 }
 .header__logo {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     text-align: center;
     text-transform: uppercase;
     line-height: 1;
+    color: var(--black400);
 }
 .header__logo em {
-    font-size: 10px;
+    font-size: 16px;
     display: block;
-    color: var(--black200);
+    color: var(--black400);
 }
 .header__nav li {
     display: inline;
@@ -30,14 +33,16 @@
 .header__nav li a {
     text-transform: uppercase;
     font-size: 14px;
+    font-weight: 500;
     padding: 14px;
     position: relative;
+    color: #e0e0e0;
 }
 .header__nav li a::before {
     content: '';
     width: calc(100% - 28px);
     height: 1px;
-    background-color: var(--black);
+    background-color: var(--black400);
     position: absolute;
     left: 14px;
     bottom: 10px;
@@ -57,7 +62,7 @@
     display: block;
     width: 40px;
     height: 2px;
-    background-color: var(--black);
+    background-color: var(--black400);
     margin-top: 19px;
     position: relative;
 }
@@ -65,7 +70,7 @@
     content: "";
     width: 40px;
     height: 2px;
-    background-color: var(--black);
+    background-color: var(--black400);
     position: absolute;
     right: 0;
     top: 6px;
@@ -75,7 +80,7 @@
     content: "";
     width: 40px;
     height: 2px;
-    background-color: var(--black);
+    background-color: var(--black400);
     position: absolute;
     left: 0;
     bottom: 6px;
@@ -93,8 +98,9 @@
         display: block;
         position: absolute;
         right: 0;
-        top: 68px;
-        background-color: rgba(116,99,99,0.1);
+        top: 61px;
+        /*background-color: rgba(116,99,99,0.1);*/
+        background-image: linear-gradient(145deg, #2b5876 0%, #4e4376 100%);
         backdrop-filter: blur(15px);
         z-index: 10000;
         min-width: 150px;
